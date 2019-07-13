@@ -1,0 +1,16 @@
+{
+	"initial": [
+		"libs/modules/egret/egret.min.js",
+		"libs/modules/egret/egret.web.min.js",
+		"libs/modules/eui/eui.min.js",
+		"resourcemanager/resourcemanager.min.js",
+		"libs/modules/tween/tween.min.js",
+		"libs/modules/game/game.min.js",
+		"libs/modules/dragonBones/dragonBones.min.js",
+		"json-bufferify/json-bufferify.min.js",
+		"polyfill/polyfill.min.js"
+	],
+	"game": [
+		"main.min.js"
+	]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="component.PanelUISkin" xmlns:e="http://ns.egret.com/eui">
+    <e:Image source="alone/bg_dialog.png" scale9Grid="27,62,865,480" left="-10" right="-22" top="-5" bottom="-26"
+             width="{contentWidth}" height="{contentHeight}" />
+    <e:Group>
+        <e:Group width="100%" height="57">
+            <e:Label id="titleDisplay" fontFamily="黑体" size="32" textColor="0xE0CED6" x="40" y="14" />
+        </e:Group>
+        <e:Group width="{contentWidth}" height="{contentHeight}" elementsContent="{elements}" />
+        <e:layout>
+            <e:VerticalLayout gap="0" />
+        </e:layout>
+    </e:Group>
+</e:Skin>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PokerTsUISkin" states="up,down" xmlns:e="http://ns.egret.com/eui" width="50" height="32">
+	<e:Image source="poker" scaleX="0.45" scaleY="0.45" y="0" x="0" anchorOffsetX="0" width="112.11" anchorOffsetY="0" height="67.67"/>
+	<e:Image id ="value" source="r2" anchorOffsetX="0" width="25" anchorOffsetY="0" height="26" x="21" y="3.5"/>
+	<e:Image id ="type_m" source="1" scaleX=".45" scaleY=".45" y="6" x="5" anchorOffsetX="0" width="47.67" anchorOffsetY="0" height="52.11"/>
+</e:Skin>

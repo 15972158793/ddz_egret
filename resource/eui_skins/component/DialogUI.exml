@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="component.DialogUISkin" xmlns:e="http://ns.egret.com/eui" xmlns:component="component.*">
+    <e:Rect id="rect" width="1206" height="750" alpha=".5" />
+    <e:Group id="main" horizontalCenter="0" verticalCenter="0">
+        <!--<e:Image source="alone/bg_dialog.png" scale9Grid="27,62,865,480" left="-10" right="-22" top="-5"
+                     bottom="-26" width="{contentWidth}" height="{contentHeight}" />
+        -->
+        <e:Group>
+            <e:Group width="{contentWidth}" height="{contentHeight}" elementsContent="{elements}" />
+            <e:Group width="100%" y="-60" height="150" touchThrough="true" touchEnabled="false">
+                <e:Image source="{title}" horizontalCenter="0" verticalCenter="0" />
+                <component:ButtonUI id="closeButton" icon="close" verticalCenter="0" right="-23" width="84" height="87"
+                                    visible="{canBack}" />
+            </e:Group>
+        </e:Group>
+    </e:Group>
+</e:Skin>

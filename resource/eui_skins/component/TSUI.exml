@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ChatDialogUISkin" xmlns:e="http://ns.egret.com/eui" xmlns:component="component.*">
+    <component:DialogUI id="dialog" contentWidth="557" contentHeight="352" canBack="false">
+        <component:elements>
+            <e:Array>
+                <e:Group horizontalCenter="170" verticalCenter="90">
+                    <e:Image source="set_bg" horizontalCenter="0" verticalCenter="0" />
+                    <e:TabBar id="tabBar" horizontalCenter="0" height="55" top="0">
+                        <e:itemRendererSkinName>
+                            <e:Skin states="up,down" width="270" height="55">
+                                <e:Rect width="270" height="55" alpha="0" horizontalCenter="0" verticalCenter="0" />
+                                <e:Image source="chat_titlebg" skewY="{data.skewY}" horizontalCenter="0"
+                                         verticalCenter="0" includeIn="up" />
+                                <e:Image source="bg_tab_curr" skewY="{data.skewY}" horizontalCenter="0"
+                                         verticalCenter="0" includeIn="down" />
+                                <e:Image source="{data.title}" horizontalCenter="0" verticalCenter="0" />
+                            </e:Skin>
+                        </e:itemRendererSkinName>
+                        <e:ArrayCollection>
+                            <e:Object title="chat_title1" skewY="180" />
+                            <e:Object title="chat_title2" />
+                        </e:ArrayCollection>
+                        <e:layout>
+                            <e:HorizontalLayout gap="-1" />
+                        </e:layout>
+                    </e:TabBar>
+                    <e:ViewStack selectedIndex="{tabBar.selectedIndex}" width="557" height="297" bottom="0">
+                        <e:Group width="100%" height="100%">
+                            <e:Scroller maxHeight="332" horizontalCenter="0.5" verticalCenter="-10">
+                                <e:DataGroup id="list">
+                                    <e:itemRendererSkinName>
+                                        <e:Skin>
+                                            <e:Image touchEnabled="false" source="chat_bar" />
+                                            <e:Label fontFamily="黑体" text="{data}" size="24" bold="true" x="11.98"
+                                                     verticalCenter="0.5" touchEnabled="false" textColor="0xffdaa8" />
+                                        </e:Skin>
+                                    </e:itemRendererSkinName>
+                                    <e:layout>
+                                        <e:VerticalLayout gap="13" />
+                                    </e:layout>
+                                </e:DataGroup>
+                            </e:Scroller>
+                        </e:Group>
+                        <e:Group width="100%" height="100%">
+                            <!--<e:Group width="557" horizontalCenter="0" verticalCenter="0">
+                            -->
+                            <e:Image source="chat_facebg" horizontalCenter="0.5" verticalCenter="-8.5" />
+                            <e:Scroller height="230" horizontalCenter="0" verticalCenter="-10">
+                                <e:DataGroup id="expression">
+                                    <e:itemRendererSkinName>
+                                        <e:Skin>
+                                            <e:Image source="{data}" touchEnabled="false" />
+                                        </e:Skin>
+                                    </e:itemRendererSkinName>
+                                    <e:layout>
+                                        <e:TileLayout requestedColumnCount="5" horizontalGap="0" verticalGap="0" />
+                                    </e:layout>
+                                </e:DataGroup>
+                            </e:Scroller>
+                            <!--</e:Group>
+                            -->
+                        </e:Group>
+                    </e:ViewStack>
+                </e:Group>
+            </e:Array>
+        </component:elements>
+    </component:DialogUI>
+</e:Skin>

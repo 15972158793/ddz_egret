@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SettingDialogUISkin" xmlns:e="http://ns.egret.com/eui" xmlns:component="component.*">
+    <component:DialogUI title="set_title" contentWidth="557" contentHeight="352">
+        <component:elements>
+            <e:Array>
+                <e:Group horizontalCenter="0" verticalCenter="0">
+                    <e:Image source="set_bg" horizontalCenter="0" verticalCenter="0" />
+                    <!--<e:Image source="set_title" horizontalCenter="0" y="-20" />-->
+                    <e:Image source="set_music" x="140" y="109" />
+                    <e:Image source="set_effect" x="140" y="208" />
+                    <e:ToggleSwitch id="music" selected="true" x="286" y="93">
+                        <e:Skin states="up,down" width="163" height="70">
+                            <e:Image source="set_off" horizontalCenter.down="0" verticalCenter.down="0"
+                                     visible.down="false" />
+                            <e:Image source="set_on" x="12" visible.up="false" />
+                        </e:Skin>
+                    </e:ToggleSwitch>
+                    <e:ToggleSwitch id="effect" selected="true" x="286" y="191">
+                        <e:Skin states="up,down" width="163" height="70">
+                            <e:Image source="set_off" horizontalCenter.down="0" verticalCenter.down="0"
+                                     visible.down="false" />
+                            <e:Image source="set_on" x="12" visible.up="false" />
+                        </e:Skin>
+                    </e:ToggleSwitch>
+                    <e:layout>
+                        <e:BasicLayout/>
+                    </e:layout>
+                </e:Group>
+            </e:Array>
+        </component:elements>
+    </component:DialogUI>
+</e:Skin>

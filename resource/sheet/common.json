@@ -1,0 +1,13 @@
+{"file":"common.png","frames":{
+"btn_red":{"x":385,"y":42,"w":173,"h":80,"offX":0,"offY":0,"sourceW":173,"sourceH":80},
+"fill":{"x":0,"y":0,"w":704,"h":42,"offX":0,"offY":0,"sourceW":704,"sourceH":42},
+"head":{"x":81,"y":128,"w":81,"h":81,"offX":0,"offY":0,"sourceW":81,"sourceH":81},
+"head_bg":{"x":0,"y":128,"w":81,"h":81,"offX":0,"offY":0,"sourceW":81,"sourceH":81},
+"stall":{"x":0,"y":209,"w":838,"h":4,"offX":0,"offY":0,"sourceW":838,"sourceH":4},
+"txt_cancel":{"x":620,"y":42,"w":61,"h":31,"offX":0,"offY":0,"sourceW":61,"sourceH":31},
+"txt_ok":{"x":558,"y":42,"w":62,"h":32,"offX":0,"offY":0,"sourceW":62,"sourceH":32},
+"btn_circle":{"x":558,"y":86,"w":156,"h":85,"offX":0,"offY":1,"sourceW":156,"sourceH":86},
+"btn_circle_coffee":{"x":212,"y":122,"w":152,"h":84,"offX":0,"offY":1,"sourceW":152,"sourceH":86},
+"btn_circle_orange":{"x":0,"y":42,"w":212,"h":86,"offX":0,"offY":0,"sourceW":212,"sourceH":86},
+"btn_coffee":{"x":704,"y":0,"w":224,"h":86,"offX":0,"offY":0,"sourceW":224,"sourceH":86},
+"btn_green":{"x":212,"y":42,"w":173,"h":80,"offX":0,"offY":0,"sourceW":173,"sourceH":80}}}

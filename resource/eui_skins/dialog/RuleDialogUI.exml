@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RuleDialogUISkin" xmlns:e="http://ns.egret.com/eui" xmlns:component="component.*">
+    <component:DialogUI title="help_title" contentWidth="1007" contentHeight="647">
+        <component:elements>
+            <e:Array>
+                <e:Group width="1007" height="647" horizontalCenter="0" verticalCenter="0">
+                    <e:Image source="help_bg" horizontalCenter="0" verticalCenter="0" />
+                    <!--<e:Image source="help_title" horizontalCenter="0" y="-24.29" />-->
+                    <e:Scroller left="50" right="50" top="50" bottom="50">
+                        <e:Group>
+                            <e:Label textFlow="{rule}" fontFamily="黑体" size="30" textColor="0xDAD8D9" lineSpacing="7"
+                                     width="100%" />
+                        </e:Group>
+                    </e:Scroller>
+                </e:Group>
+            </e:Array>
+        </component:elements>
+    </component:DialogUI>
+</e:Skin>

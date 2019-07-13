@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DissolutionDialogUISkin" states="confirm,progressing,waiting,reject" currentState="confirm"
+        xmlns:e="http://ns.egret.com/eui" xmlns:component="component.*">
+    <component:DialogUI id="dialog" title="dis_title" contentWidth="671" contentHeight="393" canBack="false"
+                        canClose="false">
+        <component:elements>
+            <e:Array>
+                <e:Image source="dis_bg" horizontalCenter="0" verticalCenter="0" />
+                <e:Group width="100%" height="100%">
+                    <e:Group width="100%" height="100%" includeIn="confirm">
+                        <e:Label text="解散房间需要征求所有在线玩家同意，\n您确定要申请解散房间吗？" fontFamily="黑体" size="32" textAlign="center"
+                                 lineSpacing="4" y="126.95" horizontalCenter="0.5" textColor="0x412417" />
+                        <e:Group bottom="40" horizontalCenter="0">
+                            <component:ButtonUI id="cancel" icon="txt_cancel" bg="btn_red" width="173" height="80" />
+                            <component:ButtonUI id="ok" icon="txt_ok" bg="btn_green" width="173" height="80" />
+                            <e:layout>
+                                <e:HorizontalLayout gap="125" />
+                            </e:layout>
+                        </e:Group>
+                    </e:Group>
+                    <e:Group width="100%" height="100%" excludeFrom="confirm">
+                        <!--<e:Group x="12" y="0">
+                        <e:DataGroup id="players" horizontalCenter="0" verticalCenter="0">
+                            <e:itemRendererSkinName>
+                                <e:Skin>
+                                    <e:Group>
+                                        <e:Group width="81" height="86">
+                                            <e:Image source="head_bg" horizontalCenter="0" y="-6" />
+                                            <e:Image source="{data.headImgUrl}" mask="{rect}" width="81" height="81" />
+                                            <e:Image id="rect" source="head" width="81" height="81" />
+                                            <e:Group width="70" height="70" right="-32" bottom="-8">
+                                                <e:Image source="{data.state}" horizontalCenter="0" verticalCenter="0" />
+                                            </e:Group>
+                                        </e:Group>
+                                        <e:Group width="0">
+                                            <e:Label fontFamily="黑体" size="18" text="{data.nickname}"
+                                                     horizontalCenter="0" />
+                                        </e:Group>
+                                        <e:layout>
+                                            <e:VerticalLayout horizontalAlign="center" />
+                                        </e:layout>
+                                    </e:Group>
+                                </e:Skin>
+                            </e:itemRendererSkinName>
+                            <e:layout>
+                                <e:HorizontalLayout gap="87" />
+                            </e:layout>
+                        </e:DataGroup>
+                    </e:Group>
+                    -->
+                    <e:Group top="60" horizontalCenter="0.5">
+                        <e:Label id="txt_who" text="谁？要求立即解散牌局" size="32" fontFamily="黑体" textColor="0x412417" />
+                        <e:Label id="txt_cur_total" text="2/2人" fontFamily="黑体" textColor="0xb90000" />
+                        <e:Label text="已经同意解散" size="32" fontFamily="黑体" textColor="0x412417" />
+                        <e:Label text="3人同意即可解散房间" size="28" fontFamily="黑体" textColor="0x857155" />
+                        <e:layout>
+                            <e:VerticalLayout horizontalAlign="center" gap="10" />
+                        </e:layout>
+                    </e:Group>
+                    <e:Group y="230" horizontalCenter="0" x="12">
+                        <e:Image source="progress" horizontalCenter="0" verticalCenter="0" />
+                        <e:Image id="progress" source="progress_percent" verticalCenter="0" left="0"
+                                 scale9Grid="4,2,639,16" />
+                    </e:Group>
+                    <e:Group bottom="40" horizontalCenter="0" includeIn="progressing">
+                        <component:ButtonUI id="reject" icon="txt_reject" bg="btn_red" width="173" height="80" />
+                        <component:ButtonUI id="agree" icon="txt_agree" bg="btn_green" width="173" height="80" />
+                        <e:layout>
+                            <e:HorizontalLayout gap="125" />
+                        </e:layout>
+                    </e:Group>
+                    <e:Label text.waiting="正在等待其他玩家选择" text.reject="有玩家拒绝解散房间" fontFamily="黑体" size="32"
+                             textColor="0x412417" bottom="63" horizontalCenter="0.5" excludeFrom="progressing" text="" />
+                </e:Group>
+            </e:Group>
+        </e:Array>
+    </component:elements>
+</component:DialogUI>
+</e:Skin>

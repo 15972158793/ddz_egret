@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="component.GameUISkin" width="1206" height="750" states="waiting,betting,playing"
+        xmlns:e="http://ns.egret.com/eui" xmlns:component="component.*" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="16030672711"/>
+    <!-- 准备 -->
+    <e:Group horizontalCenter="0" y="480" includeIn="waiting">
+        <e:Group>
+            <component:ButtonUI id="share" icon="txt_share" bg="btn_red" width="173" height="80"
+                                scale9Grid="40,40,132,3" horizontalCenter="0" />
+            <e:Image id="waiting" source="waiting" y="-3" />
+        </e:Group>
+        <e:Group>
+            <component:ButtonUI id="ready" icon="txt_ready" bg="btn_green" width="173" height="80"
+                                scale9Grid="40,40,76,3" />
+            <!--<component:ButtonUI id="stand" icon="txt_stand" bg="btn_circle" width="212" height="86"
+                                    scale9Grid="40,40,76,3" />
+            -->
+            <e:layout>
+                <e:HorizontalLayout gap="86" />
+            </e:layout>
+        </e:Group>
+        <e:layout>
+            <e:VerticalLayout horizontalAlign="center" gap="0" />
+        </e:layout>
+    </e:Group>
+    <!-- 打牌 -->
+    <e:Group width="100%" height="100%" excludeFrom="waiting" touchEnabled="false">
+        <e:Group horizontalCenter="0" y="70">
+            <e:DataGroup horizontalCenter="0" verticalCenter="0" scaleX=".6532" scaleY=".6532">
+                <e:itemRendererSkinName>
+                    <e:Skin>
+                        <e:Image source="poker_back" top="-5" bottom="-6" left="-5" right="-4" />
+                    </e:Skin>
+                </e:itemRendererSkinName>
+                <e:ArrayCollection>
+                    <e:Object/>
+                    <e:Object/>
+                    <e:Object/>
+                </e:ArrayCollection>
+                <e:layout>
+                    <e:HorizontalLayout gap="27" />
+                </e:layout>
+            </e:DataGroup>
+            <e:DataGroup id="hole" itemRenderer="component.PokerItemUI" horizontalCenter="0" verticalCenter="0"
+                         scaleX=".6532" scaleY=".6532">
+                <e:layout>
+                    <e:HorizontalLayout gap="27" />
+                </e:layout>
+            </e:DataGroup>
+        </e:Group>
+        <e:Group horizontalCenter="0" bottom="20">
+            <e:Group width="689" height="86">
+                <e:Group id="betGroup" horizontalCenter="0" visible="{me.current}" includeIn="betting">
+                    <component:ButtonUI icon="{'txt_' + bet.source0}" bg="btn_green" width="173" height="80"
+                                        scale9Grid="40,40,76,3" />
+                    <component:ButtonUI icon="{'txt_' + bet.source1}" bg="btn_red" width="173" height="80"
+                                        scale9Grid="40,40,72,3" />
+                    <e:layout>
+                        <e:HorizontalLayout gap="27" />
+                    </e:layout>
+                </e:Group>
+                <e:Group horizontalCenter="0" visible="{me.current}" includeIn="playing">
+                    <component:CountUI startTime="{startTime}" horizontalCenter="0" y="-90" />
+                    <e:Group>
+                        <component:ButtonUI id="pass" icon="txt_bc" bg="btn_red" width="173" height="80"
+                                            scale9Grid="40,40,76,3" visible="{seat.canPass}"
+                                            includeInLayout="{seat.canPass}" />
+                        <component:ButtonUI id="hint" icon="txt_hint" bg="btn_green" width="173" height="80"
+                                            scale9Grid="40,40,76,3" visible="{seat.canTip}"
+                                            includeInLayout="{seat.canTip}" />
+                        <component:ButtonUI id="do" icon="txt_cp" bg="btn_green" width="173" height="80"
+                                            scale9Grid="40,40,72,3" />
+                        <e:layout>
+                            <e:HorizontalLayout gap="27" />
+                        </e:layout>
+                    </e:Group>
+                </e:Group>
+                <e:DataGroup id="mine" itemRenderer="component.PokerItemUI" horizontalCenter="0" bottom="15" scaleX=".8"
+                             scaleY=".8" visible="false">
+                    <e:layout>
+                        <e:HorizontalLayout gap="-62" />
+                    </e:layout>
+                </e:DataGroup>
+                <e:Image id="mineTxt" horizontalCenter="0" verticalCenter="0" visible="false" />
+            </e:Group>
+            <e:DataGroup id="poker" itemRenderer="component.PokerItemUI">
+                <e:layout>
+                    <e:HorizontalLayout gap="-56" />
+                </e:layout>
+            </e:DataGroup>
+            <e:layout>
+                <e:VerticalLayout horizontalAlign="center" gap="43" />
+            </e:layout>
+        </e:Group>
+			<e:Group id="tsleftPlayer" width="689" height="60.33" anchorOffsetX="0" anchorOffsetY="0" left="139" top="164">
+				<e:layout>
+					<e:TileLayout/>
+				</e:layout>
+			</e:Group>
+			<e:Group id="tsrightPlayer" height="61.67" anchorOffsetX="0" anchorOffsetY="0" right="139" width="689" bottom="376">
+				<e:layout>
+					<e:TileLayout/>
+				</e:layout>
+			</e:Group>
+    </e:Group>
+    <!-- 头像 -->
+    <component:PlayerUI id="me" x="16" bottom="82" state="me" />
+    <component:PlayerUI id="leftPlayer" x="16" y="197" />
+    <component:PlayerUI id="rightPlayer" right="16" y="197" state="right" />
+</e:Skin>

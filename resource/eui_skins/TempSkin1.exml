@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TempSkin1" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="1207">
+	<e:Label fontFamily="黑体" size="24" text="{data.nickname}" verticalCenter="0" textColor="0xffd9a7" horizontalCenter="-221"/>
+    <e:Group verticalCenter="0" left="200">
+        <e:Group>
+            <e:Image source="head_bg" horizontalCenter="0" />
+            <e:Image source="{data.headImgUrl}" mask="{rect}" height="81" width="81" />
+            <e:Image id="rect" source="head" width="81" height="81" />
+        </e:Group>
+    </e:Group>
+</e:Skin>

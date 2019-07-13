@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<e:Skin class="component.CountUISkin" xmlns:e="http://ns.egret.com/eui">
+    <e:Image source="count" top="-2" bottom="-12" left="-6" right="-6" />
+    <e:Group width="0" height="0" x="100" verticalCenter="0">
+        <e:DataGroup horizontalCenter="0" verticalCenter="0" dataProvider="{time}">
+            <e:itemRendererSkinName>
+                <e:Skin>
+                    <e:Label text="{data}" fontFamily="黑体" size="40" textColor="0xE7FFCA" bold="true" />
+                </e:Skin>
+            </e:itemRendererSkinName>
+            <e:layout>
+                <e:HorizontalLayout gap="3" />
+            </e:layout>
+        </e:DataGroup>
+    </e:Group>
+    <e:Image source="count_percent" horizontalCenter="0" verticalCenter="0" mask="{percent}" />
+    <e:Group id="percent" />
+</e:Skin>

@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <title>斗地主</title>
+        <style>
+            html,
+            body {
+                padding: 0;
+                border: 0;
+                margin: 0;
+                height: 100%;
+                overflow: hidden;
+                -webkit-user-select: none;
+                user-select: none;
+            }
+
+            body>aside {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 1206px;
+                height: 750px;
+                -webkit-transform-origin: 0 0;
+                transform-origin: 0 0;
+            }
+
+            body>aside>div {
+                width: 100%;
+                height: 100%;
+            }
+
+            body>aside>div>img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            body>aside>div>figure {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+            }
+
+            body>div {
+                margin: auto;
+                width: 100%;
+                height: 100%;
+            }
+
+            @media screen and (orientation: portrait) {
+                body>aside>div {
+                    -webkit-transform: rotate(-90deg);
+                    transform: rotate(-90deg);
+                    -webkit-transform-origin: center 603px;
+                    transform-origin: center 603px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <aside>
+            <div>
+                <img>
+                <figure>
+                    <img>
+                </figure>
+            </div>
+        </aside>
+        <div class="egret-player" data-entry-class="Main" data-scale-mode="exactFit" data-orientation="landscapeFlipped" data-frame-rate="30" data-content-width="1206" data-content-height="750"></div>
+        <script>
+            var engine = '5.0.13',
+                oldEngine = localStorage.getItem('engine-ddz'),
+                version = '1.2.2',
+                oldVersion = localStorage.getItem('version-ddz'),
+                params = {},
+                aside = document.querySelector('aside'),
+                img = aside.querySelectorAll('img'),
+                egretPlayer = aside.nextElementSibling,
+                setProgress = function (current, total, second) {
+                    window.parent.postMessage({
+                        forLobby: true,
+                        cmd: 'loading',
+                        percent: current / total * .5 + (second ? .5 : 0)
+                    }, '*');
+                };
+            location.search.substr(1).split('&').forEach(function (item) {
+                var param = item.split('='),
+                    key = decodeURIComponent(param[0]),
+                    val = decodeURIComponent(param[1]);
+                if (params[key] !== undefined) {
+                    if (!(params[key] instanceof Array)) {
+                        params[key] = [params[key]];
+                    }
+                    params[key].push(val);
+                } else {
+                    params[key] = val;
+                }
+            });
+            params.roleId = parseInt(params.roleId, 10);
+            params.roomId = parseInt(params.roomId, 10);
+            params.oss = params.oss ? params.oss + '/ddz/' : '';
+            img[0].src = params.oss + './resource/alone/bg.jpg?v=' + version;
+            // img[1].src = params.oss + './resource/alone/bg_under.png?v=' + version;
+            localStorage.setItem('engine-ddz', engine);
+            localStorage.setItem('version-ddz', version);
+            (function (xhr) {
+                xhr.responseType = 'json';
+                xhr.open('GET', params.oss + './manifest.json?v=' + version);
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                        var initial = xhr.response.initial.map(function (item) {
+                            return item + '?v=' + engine;
+                        }),
+                            game = xhr.response.game.map(function (item) {
+                                return item + '?v-ddz=' + version;
+                            }),
+                            list = initial.concat(game),
+                            current = 0,
+                            total = list.length;
+                        engine !== oldEngine && initial.forEach(function (src) {
+                            localStorage.removeItem(src.replace('?v=' + engine, '?v=' + oldEngine));
+                        });
+                        version !== oldVersion && game.forEach(function (src) {
+                            localStorage.removeItem(src.replace('?v-ddz=' + version, '?v-ddz=' + oldVersion));
+                        });
+                        (function () {
+                            var src,
+                                text,
+                                callee = arguments.callee,
+                                func = function (text) {
+                                    var s = document.createElement('script');
+                                    s.text = text;
+                                    document.body.appendChild(s);
+                                    callee();
+                                };
+                            setProgress(current++, total);
+                            if (list.length) {
+                                src = list.shift();
+                                text = localStorage.getItem(src);
+                                if (text) {
+                                    func(text);
+                                } else {
+                                    (function (xhr) {
+                                        xhr.responseType = 'text';
+                                        xhr.open('GET', params.oss + src);
+                                        xhr.onreadystatechange = function () {
+                                            if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                                                localStorage.setItem(src, xhr.response);
+                                                func(xhr.response);
+                                            }
+                                        };
+                                        xhr.send();
+                                    }(new XMLHttpRequest()));
+                                }
+                            } else {
+                                window.addEventListener('message', function (e) {
+                                    if (e.source === window.parent && e.source !== window) {
+                                        if (e.data.forLobby) {
+                                            Net.onPostMessage(e.data);
+                                        } else {
+                                            Net.onmessage(e);
+                                        }
+                                    }
+                                });
+                                egret.runEgret({
+                                    renderMode: 'canvas',
+                                    canvasScaleFactor: 1
+                                });
+                            }
+                        }());
+                    }
+                };
+                xhr.send();
+            }(new XMLHttpRequest()));
+            window.addEventListener('resize', (function () {
+                var rect = egretPlayer.getBoundingClientRect();
+                aside.style.webkitTransform = aside.style.transform = rect.width < rect.height ? 'scale(' + (rect.width / 750) + ',' + (rect.height / 1206) + ')' : 'scale(' + (rect.width / 1206) + ',' + (rect.height / 750) + ')';
+                return arguments.callee;
+            })());
+        </script>
+    </body>
+</html>

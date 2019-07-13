@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TempSkin" xmlns:e="http://ns.egret.com/eui" states="single,total" xmlns:component="component.*"
+        width="1207" height="750">
+	<e:Image source="stmt_bg" horizontalCenter="0" />
+	<e:Group width="100%" horizontalCenter="0" verticalCenter="0" height="100%">
+		<e:Group includeIn="total" horizontalCenter="0" top="140">
+			<e:Label text="斗地主" fontFamily="黑体" size="24" textColor="0xffd9a7" />
+			<e:Label text="自由匹配" fontFamily="黑体" size="24" textColor="0xffd9a7" includeInLayout="{fast.real}"
+			         visible="{fast.real}" />
+			<e:Group includeInLayout="{fast.not}" visible="{fast.not}">
+				<e:Label text="房间号：" fontFamily="黑体" size="24" textColor="0xffd9a7" />
+				<e:Label text="{roomId}" fontFamily="黑体" size="24" textColor="0xffd9a7" />
+				<e:layout>
+					<e:HorizontalLayout gap="0" />
+				</e:layout>
+			</e:Group>
+			<e:Group includeInLayout="{fast.not}" visible="{fast.not}">
+				<e:Label text="局数：" fontFamily="黑体" size="24" textColor="0xffd9a7" />
+				<e:Label text="{round}" fontFamily="黑体" size="24" textColor="0xffd9a7" />
+				<e:layout>
+					<e:HorizontalLayout gap="0" />
+				</e:layout>
+			</e:Group>
+			<e:layout>
+				<e:HorizontalLayout gap="104" />
+			</e:layout>
+		</e:Group>
+		<e:Group x="55" y="172">
+			<e:Image source="stmt_line" y="0" x="0" />
+			<e:Image source="stmt_line" y="0" x="0" />
+			<e:Image source="stmt_line" y="0" x="0" />
+			<e:Image source="stmt_line" y="0" x="0" />
+			<e:layout>
+				<e:VerticalLayout gap="108" />
+			</e:layout>
+		</e:Group>
+		<e:Group y="187" horizontalCenter="0">
+			<e:DataGroup id="players" touchEnabled="false" touchChildren="false" horizontalCenter="0" y="-12"
+			             dataProvider="{dataProvider}">
+				<e:dataProvider.single>
+					<e:ArrayCollection>
+						<e:Array>
+							<e:Object state="winner" nickname="hhd" />
+							<e:Object ddd="null" />
+							<e:Object ddd="null" />
+						</e:Array>
+					</e:ArrayCollection>
+				</e:dataProvider.single>
+				<e:itemRendererSkinName>
+					<e:Skin states="loser,winner" currentState="{data.state}" width="1097" height="108">
+						<e:Group verticalCenter="0" left="200">
+							<e:Group>
+								<e:Image source="head_bg" horizontalCenter="0" />
+								<e:Image source="{data.headImgUrl}" mask="{rect}" height="81" width="81" />
+								<e:Image id="rect" source="head" width="81" height="81" />
+							</e:Group>
+						</e:Group>
+						<e:Label fontFamily="黑体" size="24" text="{data.nickname}" verticalCenter="0" horizontalCenter="{data.showNick}"
+						         textColor="0xffd9a7" />
+						<e:Group verticalCenter="0.5" horizontalCenter="0" visible="{data.showCenter}">
+							<e:DataGroup verticalCenter="0" dataProvider="{data.prop}">
+								<e:itemRendererSkinName>
+									<e:Skin>
+										<e:Group>
+											<e:Label text="{data.key}" fontFamily="黑体" size="24" textColor="0xffdd69" />
+											<e:Label text="{data.value}" fontFamily="黑体" size="24" textColor="0xffdd69" textAlign="right" />
+											<e:layout>
+												<e:HorizontalLayout gap="14" />
+											</e:layout>
+										</e:Group>
+									</e:Skin>
+								</e:itemRendererSkinName>
+								<e:layout>
+									<e:TileLayout requestedColumnCount="2" />
+								</e:layout>
+							</e:DataGroup>
+						</e:Group>
+						<e:Group verticalCenter="0.5" left="770">
+							<e:Label text="得分：" fontFamily="黑体" size="24" textColor="0xffd9a7" />
+							<e:Label text="{data.totalScore}" fontFamily="黑体" size="24" textColor="{data.txtColer}" />
+							<e:layout>
+								<e:HorizontalLayout/>
+							</e:layout>
+						</e:Group>
+						<e:Image source="king" x="150" y="-37.58" includeIn="winner" />
+						<e:Image source="king_mark" right="-2" bottom="-5" includeIn="winner" visible="false" />
+						<e:Image source="stmt_line" bottom="0" horizontalCenter="0" visible="false" />
+					</e:Skin>
+				</e:itemRendererSkinName>
+				<e:layout>
+					<e:VerticalLayout gap="0" />
+				</e:layout>
+			</e:DataGroup>
+		</e:Group>
+		<e:Group y="601" horizontalCenter="0">
+			<component:ButtonUI id="continue" icon="txt_continue" bg="btn_green" width="173" height="80" includeIn="single" />
+			<component:ButtonUI id="back" icon="txt_back" bg="btn_red" width="173" height="80" includeIn="total" />
+			<component:ButtonUI id="share" icon="txt_flaunt" bg="btn_green" width="173" height="80" includeIn="total" />
+			<e:layout>
+				<e:HorizontalLayout gap="159" />
+			</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Group top="72" horizontalCenter="0">
+		<e:Image source="stmt_title2" includeIn="total" />
+		<e:Image source="stmt_title1" includeIn="single" />
+	</e:Group>
+</e:Skin>

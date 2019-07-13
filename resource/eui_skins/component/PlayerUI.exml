@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="component.PlayerUISkin" states="left,right,me,none" currentState="{state}"
+        xmlns:e="http://ns.egret.com/eui" xmlns:component="component.*">
+    <e:Group id="g_player" width="117" height="152">
+        <e:Group>
+            <e:Group>
+                <e:Group width="81" height="86">
+                    <e:Image source="head_bg" horizontalCenter="0" />
+                    <e:Image source="bg_none" horizontalCenter="0" y="-2" />
+                    <e:Image source="{head}" mask="{rect}" width="81" height="81" />
+                    <e:Image id="rect" source="head" width="81" height="81" />
+                    <e:Group visible="{offline}">
+                        <e:Image source="offline_bg" />
+                        <e:Image source="offline" horizontalCenter="0" verticalCenter="0" />
+                    </e:Group>
+                    <e:Image id="shine" source="head_shine" horizontalCenter="0" y="-6" visible="{current}" />
+                    <e:Image source="host" x="-11" y="-14" visible="{host}" />
+                    <e:Group id="gif" scaleX=".49" scaleY=".49" />
+                </e:Group>
+                <e:Group width="0">
+                    <e:Label fontFamily="黑体" size="18" height="18" text="{uname}" horizontalCenter="0" />
+                </e:Group>
+                <e:Group>
+                    <e:Image source="score" left="-9" right="-1" top="-6" bottom="-27" />
+                    <e:Group width="0" height="0" x="77.5" y="18">
+                        <e:Label fontFamily="黑体" size="30" textColor="0xEFD065" horizontalCenter="0" verticalCenter="0"
+                                 text="{score}" />
+                    </e:Group>
+                </e:Group>
+                <e:layout>
+                    <e:VerticalLayout horizontalAlign="center" />
+                </e:layout>
+            </e:Group>
+        </e:Group>
+        <e:Group x="132" right.right="132" y="-76">
+            <e:Group excludeFrom="me,none" right.right="0">
+                <e:Group visible="{showCount}">
+                    <e:Group x.me="-91" x.left="-90" right.right="-96">
+                        <e:Image source="poker_back" scaleX="0.35" scaleY="0.35" />
+                        <e:DataGroup horizontalCenter="0" verticalCenter="0" dataProvider="{count}">
+                            <e:itemRendererSkinName>
+                                <e:Skin>
+                                    <e:Image source="{'l' + data}" />
+                                </e:Skin>
+                            </e:itemRendererSkinName>
+                            <e:layout>
+                                <e:HorizontalLayout gap="0" />
+                            </e:layout>
+                        </e:DataGroup>
+                    </e:Group>
+                    <component:CountUI startTime="{startTime}" right.right="0" y="100" visible="{current}"
+                                       includeInLayout="{current}" />
+                </e:Group>
+                <e:DataGroup itemRenderer="component.PokerItemUI" dataProvider="{dataProvider}" scaleX=".8" scaleY=".8">
+                    <e:layout>
+                        <e:TileLayout requestedColumnCount="10" horizontalGap="-62" verticalGap="-67" />
+                    </e:layout>
+                </e:DataGroup>
+                <e:layout>
+                    <e:VerticalLayout gap="13" horizontalAlign.right="right" />
+                </e:layout>
+            </e:Group>
+            <e:Image source="{txt}" right.right="0" y="116" />
+        </e:Group>
+        <e:Group id="chatGroup" x="109" right.right="109" y="-98" width="244" height="117" visible="false">
+            <e:Image source="bg_chat" horizontalCenter="0" verticalCenter="0" skewY.right="180" />
+            <e:Label id="chat" fontFamily="黑体" size="21.42" text="快点吧，花儿都要谢了！" left="27" left.right="22" right="22"
+                     right.right="27" top="16" bottom="35" lineSpacing="3" />
+        </e:Group>
+    </e:Group>
+    <e:Button id="btn_invite" x="9" y="25">
+        <e:Skin width="99" height="102" states="up,down">
+            <e:Image source="btn_share" horizontalCenter="0" verticalCenter="0" scaleX.down="0.9" scaleY.down="0.9" />
+        </e:Skin>
+    </e:Button>
+</e:Skin>

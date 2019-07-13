@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.ToggleSwitchSkin" states="up,down,disabled,upAndSelected,downAndSelected,disabledAndSelected"
+        xmlns:e="http://ns.egret.com/eui">
+    <e:Group>
+        <e:Label id="labelDisplay" fontFamily="黑体" size="32" textColor="0xDAD8D9" />
+        <e:Group width="178" height="95">
+            <e:Image source="on" source.up="off" source.down="off" source.disabled="off" horizontalCenter="0"
+                     verticalCenter="0" />
+        </e:Group>
+        <e:layout>
+            <e:HorizontalLayout verticalAlign="middle" gap="12" />
+        </e:layout>
+    </e:Group>
+</e:Skin>

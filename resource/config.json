@@ -1,0 +1,1076 @@
+{
+	"alias": {
+		"1": "poker_json#1",
+		"2": "poker_json#2",
+		"3": "poker_json#3",
+		"4": "poker_json#4",
+		"expression_json": "sheet/expression.json",
+		"e0": "expression_json#e0",
+		"e1": "expression_json#e1",
+		"e10": "expression_json#e10",
+		"e11": "expression_json#e11",
+		"e12": "expression_json#e12",
+		"e13": "expression_json#e13",
+		"e14": "expression_json#e14",
+		"e15": "expression_json#e15",
+		"e16": "expression_json#e16",
+		"e17": "expression_json#e17",
+		"e18": "expression_json#e18",
+		"e19": "expression_json#e19",
+		"e2": "expression_json#e2",
+		"e20": "expression_json#e20",
+		"e21": "expression_json#e21",
+		"e22": "expression_json#e22",
+		"e23": "expression_json#e23",
+		"e24": "expression_json#e24",
+		"e25": "expression_json#e25",
+		"e26": "expression_json#e26",
+		"e3": "expression_json#e3",
+		"e4": "expression_json#e4",
+		"e5": "expression_json#e5",
+		"e6": "expression_json#e6",
+		"e7": "expression_json#e7",
+		"e8": "expression_json#e8",
+		"e9": "expression_json#e9",
+		"poker_json": "sheet/poker.json",
+		"0_60": "poker_json#0_60",
+		"0_61": "poker_json#0_61",
+		"1_11": "poker_json#1_11",
+		"1_12": "poker_json#1_12",
+		"1_13": "poker_json#1_13",
+		"2_11": "poker_json#2_11",
+		"2_12": "poker_json#2_12",
+		"2_13": "poker_json#2_13",
+		"3_11": "poker_json#3_11",
+		"3_12": "poker_json#3_12",
+		"3_13": "poker_json#3_13",
+		"4_11": "poker_json#4_11",
+		"4_12": "poker_json#4_12",
+		"4_13": "poker_json#4_13",
+		"h1": "poker_json#h1",
+		"h10": "poker_json#h10",
+		"h11": "poker_json#h11",
+		"h12": "poker_json#h12",
+		"h13": "poker_json#h13",
+		"h2": "poker_json#h2",
+		"h3": "poker_json#h3",
+		"h4": "poker_json#h4",
+		"h5": "poker_json#h5",
+		"h6": "poker_json#h6",
+		"h60": "poker_json#h60",
+		"h7": "poker_json#h7",
+		"h8": "poker_json#h8",
+		"h9": "poker_json#h9",
+		"poker": "poker_json#poker",
+		"r1": "poker_json#r1",
+		"r10": "poker_json#r10",
+		"r11": "poker_json#r11",
+		"r12": "poker_json#r12",
+		"r13": "poker_json#r13",
+		"r2": "poker_json#r2",
+		"r3": "poker_json#r3",
+		"r4": "poker_json#r4",
+		"r5": "poker_json#r5",
+		"r6": "poker_json#r6",
+		"r61": "poker_json#r61",
+		"r7": "poker_json#r7",
+		"r8": "poker_json#r8",
+		"r9": "poker_json#r9",
+		"default_json": "sheet/default.json",
+		"border_png": "default_json#border_png",
+		"button_down_png": "default_json#button_down_png",
+		"button_up_png": "default_json#button_up_png",
+		"checkbox_select_disabled_png": "default_json#checkbox_select_disabled_png",
+		"checkbox_select_down_png": "default_json#checkbox_select_down_png",
+		"checkbox_select_up_png": "default_json#checkbox_select_up_png",
+		"checkbox_unselect_png": "default_json#checkbox_unselect_png",
+		"handle_png": "default_json#handle_png",
+		"header_png": "default_json#header_png",
+		"off_png": "default_json#off_png",
+		"on_png": "default_json#on_png",
+		"radiobutton_select_disabled_png": "default_json#radiobutton_select_disabled_png",
+		"radiobutton_select_down_png": "default_json#radiobutton_select_down_png",
+		"radiobutton_select_up_png": "default_json#radiobutton_select_up_png",
+		"radiobutton_unselect_png": "default_json#radiobutton_unselect_png",
+		"roundthumb_png": "default_json#roundthumb_png",
+		"selected_png": "default_json#selected_png",
+		"thumb_pb_png": "default_json#thumb_pb_png",
+		"thumb_png": "default_json#thumb_png",
+		"track_pb_png": "default_json#track_pb_png",
+		"track_png": "default_json#track_png",
+		"track_sb_png": "default_json#track_sb_png",
+		"tracklight_png": "default_json#tracklight_png",
+		"bg_menu": "alone/bg_menu.png",
+		"bg_menu_line": "alone/bg_menu_line.png",
+		"dialog_json": "sheet/dialog.json",
+		"bg_dissolution": "dialog_json#bg_dissolution",
+		"bg_result": "dialog_json#bg_result",
+		"bg_result_king": "dialog_json#bg_result_king",
+		"bg_tab_curr": "dialog_json#bg_tab_curr",
+		"bg_voice": "dialog_json#bg_voice",
+		"close": "dialog_json#close",
+		"expand": "dialog_json#expand",
+		"king": "dialog_json#king",
+		"king_mark": "dialog_json#king_mark",
+		"loading_mini": "dialog_json#loading_mini",
+		"menu_back": "dialog_json#menu_back",
+		"menu_dissolution": "dialog_json#menu_dissolution",
+		"menu_rule": "dialog_json#menu_rule",
+		"menu_share": "dialog_json#menu_share",
+		"menu_top": "dialog_json#menu_top",
+		"menu_viewer": "dialog_json#menu_viewer",
+		"o": "dialog_json#o",
+		"off": "dialog_json#off",
+		"on": "dialog_json#on",
+		"progress": "dialog_json#progress",
+		"progress_percent": "dialog_json#progress_percent",
+		"txt_agree": "dialog_json#txt_agree",
+		"txt_back": "dialog_json#txt_back",
+		"txt_continue": "dialog_json#txt_continue",
+		"txt_flaunt": "dialog_json#txt_flaunt",
+		"txt_reject": "dialog_json#txt_reject",
+		"voice": "dialog_json#voice",
+		"voice_percent": "dialog_json#voice_percent",
+		"x": "dialog_json#x",
+		"main_json": "sheet/main.json",
+		"arrow": "main_json#arrow",
+		"bg_chat": "main_json#bg_chat",
+		"bg_hole": "main_json#bg_hole",
+		"bg_none": "main_json#bg_none",
+		"bg_top": "main_json#bg_top",
+		"btn_chat": "main_json#btn_chat",
+		"btn_menu": "main_json#btn_menu",
+		"btn_setting": "main_json#btn_setting",
+		"btn_share": "main_json#btn_share",
+		"btn_voice": "main_json#btn_voice",
+		"count": "main_json#count",
+		"count_percent": "main_json#count_percent",
+		"head_shine": "main_json#head_shine",
+		"host": "main_json#host",
+		"host_mark": "main_json#host_mark",
+		"l0": "main_json#l0",
+		"l1": "main_json#l1",
+		"l2": "main_json#l2",
+		"l3": "main_json#l3",
+		"l4": "main_json#l4",
+		"l5": "main_json#l5",
+		"l6": "main_json#l6",
+		"l7": "main_json#l7",
+		"l8": "main_json#l8",
+		"l9": "main_json#l9",
+		"offline": "main_json#offline",
+		"offline_bg": "main_json#offline_bg",
+		"poker_back": "main_json#poker_back",
+		"score": "main_json#score",
+		"txt_bc": "main_json#txt_bc",
+		"txt_bcz": "main_json#txt_bcz",
+		"txt_bj": "main_json#txt_bj",
+		"txt_bjb": "main_json#txt_bjb",
+		"txt_bjbz": "main_json#txt_bjbz",
+		"txt_bjz": "main_json#txt_bjz",
+		"txt_bq": "main_json#txt_bq",
+		"txt_bqz": "main_json#txt_bqz",
+		"txt_call": "main_json#txt_call",
+		"txt_callz": "main_json#txt_callz",
+		"txt_cp": "main_json#txt_cp",
+		"txt_double": "main_json#txt_double",
+		"txt_doublez": "main_json#txt_doublez",
+		"txt_hint": "main_json#txt_hint",
+		"txt_ready": "main_json#txt_ready",
+		"txt_readyz": "main_json#txt_readyz",
+		"txt_recall": "main_json#txt_recall",
+		"txt_recallz": "main_json#txt_recallz",
+		"txt_share": "main_json#txt_share",
+		"txt_stand": "main_json#txt_stand",
+		"waiting": "main_json#waiting",
+		"newImg_json": "sheet/newImg.json",
+		"chat_bar": "newImg_json#chat_bar",
+		"chat_facebg": "newImg_json#chat_facebg",
+		"chat_title1": "newImg_json#chat_title1",
+		"chat_title2": "newImg_json#chat_title2",
+		"chat_titlebg": "newImg_json#chat_titlebg",
+		"dis_bg": "newImg_json#dis_bg",
+		"dis_title": "newImg_json#dis_title",
+		"help_bg": "newImg_json#help_bg",
+		"help_title": "newImg_json#help_title",
+		"set_bg": "newImg_json#set_bg",
+		"set_effect": "newImg_json#set_effect",
+		"set_music": "newImg_json#set_music",
+		"set_off": "newImg_json#set_off",
+		"set_on": "newImg_json#set_on",
+		"set_title": "newImg_json#set_title",
+		"stmt_bg": "newImg_json#stmt_bg",
+		"stmt_line": "newImg_json#stmt_line",
+		"stmt_title1": "newImg_json#stmt_title1",
+		"stmt_title2": "newImg_json#stmt_title2",
+		"common_json": "sheet/common.json",
+		"btn_circle": "common_json#btn_circle",
+		"btn_circle_coffee": "common_json#btn_circle_coffee",
+		"btn_circle_orange": "common_json#btn_circle_orange",
+		"btn_coffee": "common_json#btn_coffee",
+		"btn_green": "common_json#btn_green",
+		"btn_red": "common_json#btn_red",
+		"fill": "common_json#fill",
+		"head": "common_json#head",
+		"head_bg": "common_json#head_bg",
+		"stall": "common_json#stall",
+		"txt_cancel": "common_json#txt_cancel",
+		"txt_ok": "common_json#txt_ok"
+	},
+	"groups": {
+		"preload": [
+			"default_json",
+			"dialog_json",
+			"main_json",
+			"newImg_json",
+			"common_json"
+		],
+		"unload": [
+			"bg_menu",
+			"bg_menu_line"
+		]
+	},
+	"resources": {
+		"alone": {
+			"bg.jpg": {
+				"url": "alone/bg.jpg",
+				"type": "version",
+				"name": "alone/bg.jpg"
+			},
+			"bg_dialog.png": {
+				"url": "alone/bg_dialog.png",
+				"type": "version",
+				"name": "alone/bg_dialog.png"
+			},
+			"bg_menu.png": {
+				"url": "alone/bg_menu.png",
+				"type": "image",
+				"name": "alone/bg_menu.png"
+			},
+			"bg_menu_line.png": {
+				"url": "alone/bg_menu_line.png",
+				"type": "image",
+				"name": "alone/bg_menu_line.png"
+			},
+			"bg_under.png": {
+				"url": "alone/bg_under.png",
+				"type": "version",
+				"name": "alone/bg_under.png"
+			},
+			"bg_viewer.png": {
+				"url": "alone/bg_viewer.png",
+				"type": "version",
+				"name": "alone/bg_viewer.png"
+			},
+			"share.png": {
+				"url": "alone/share.png",
+				"type": "version",
+				"name": "alone/share.png"
+			},
+			"top.png": {
+				"url": "alone/top.png",
+				"type": "version",
+				"name": "alone/top.png"
+			}
+		},
+		"effect": {
+			"effect_ske.dbmv": {
+				"url": "effect/effect_ske.dbmv",
+				"type": "version",
+				"name": "effect/effect_ske.dbmv"
+			},
+			"effect_tex.png": {
+				"url": "effect/effect_tex.png",
+				"type": "version",
+				"name": "effect/effect_tex.png"
+			}
+		},
+		"movieclip": {
+			"expression.json": {
+				"url": "movieclip/expression.json",
+				"type": "version",
+				"name": "movieclip/expression.json"
+			},
+			"expression.png": {
+				"url": "movieclip/expression.png",
+				"type": "version",
+				"name": "movieclip/expression.png"
+			}
+		},
+		"sheet": {
+			"common.json": {
+				"url": "sheet/common.json",
+				"type": "sheet",
+				"name": "sheet/common.json",
+				"subkeys": "btn_circle,btn_circle_coffee,btn_circle_orange,btn_coffee,btn_green,btn_red,fill,head,head_bg,stall,txt_cancel,txt_ok"
+			},
+			"common.png": {
+				"url": "sheet/common.png",
+				"type": "version",
+				"name": "sheet/common.png"
+			},
+			"default.json": {
+				"url": "sheet/default.json",
+				"type": "sheet",
+				"name": "sheet/default.json",
+				"subkeys": "border_png,button_down_png,button_up_png,checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,handle_png,header_png,off_png,on_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,selected_png,thumb_pb_png,thumb_png,track_pb_png,track_png,track_sb_png,tracklight_png"
+			},
+			"default.png": {
+				"url": "sheet/default.png",
+				"type": "version",
+				"name": "sheet/default.png"
+			},
+			"dialog.json": {
+				"url": "sheet/dialog.json",
+				"type": "sheet",
+				"name": "sheet/dialog.json",
+				"subkeys": "bg_dissolution,bg_result,bg_result_king,bg_tab_curr,bg_voice,close,expand,king,king_mark,loading_mini,menu_back,menu_dissolution,menu_rule,menu_share,menu_top,menu_viewer,o,off,on,progress,progress_percent,txt_agree,txt_back,txt_continue,txt_flaunt,txt_reject,voice,voice_percent,x"
+			},
+			"dialog.png": {
+				"url": "sheet/dialog.png",
+				"type": "version",
+				"name": "sheet/dialog.png"
+			},
+			"expression.json": {
+				"url": "sheet/expression.json",
+				"type": "sheet",
+				"name": "sheet/expression.json",
+				"subkeys": "e0,e1,e10,e11,e12,e13,e14,e15,e16,e17,e18,e19,e2,e20,e21,e22,e23,e24,e25,e26,e3,e4,e5,e6,e7,e8,e9"
+			},
+			"expression.png": {
+				"url": "sheet/expression.png",
+				"type": "version",
+				"name": "sheet/expression.png"
+			},
+			"main.json": {
+				"url": "sheet/main.json",
+				"type": "sheet",
+				"name": "sheet/main.json",
+				"subkeys": "arrow,bg_chat,bg_hole,bg_none,bg_top,btn_chat,btn_menu,btn_setting,btn_share,btn_voice,count,count_percent,head_shine,host,host_mark,l0,l1,l2,l3,l4,l5,l6,l7,l8,l9,offline,offline_bg,poker_back,score,txt_bc,txt_bcz,txt_bj,txt_bjb,txt_bjbz,txt_bjz,txt_bq,txt_bqz,txt_call,txt_callz,txt_cp,txt_double,txt_doublez,txt_hint,txt_ready,txt_readyz,txt_recall,txt_recallz,txt_share,txt_stand,waiting"
+			},
+			"main.png": {
+				"url": "sheet/main.png",
+				"type": "version",
+				"name": "sheet/main.png"
+			},
+			"newImg.json": {
+				"url": "sheet/newImg.json",
+				"type": "sheet",
+				"name": "sheet/newImg.json",
+				"subkeys": "chat_bar,chat_facebg,chat_title1,chat_title2,chat_titlebg,dis_bg,dis_title,help_bg,help_title,set_bg,set_effect,set_music,set_off,set_on,set_title,stmt_bg,stmt_line,stmt_title1,stmt_title2"
+			},
+			"newImg.png": {
+				"url": "sheet/newImg.png",
+				"type": "version",
+				"name": "sheet/newImg.png"
+			},
+			"poker.json": {
+				"url": "sheet/poker.json",
+				"type": "sheet",
+				"name": "sheet/poker.json",
+				"subkeys": "0_60,0_61,1,1_11,1_12,1_13,2,2_11,2_12,2_13,3,3_11,3_12,3_13,4,4_11,4_12,4_13,h1,h10,h11,h12,h13,h2,h3,h4,h5,h6,h60,h7,h8,h9,poker,r1,r10,r11,r12,r13,r2,r3,r4,r5,r6,r61,r7,r8,r9"
+			},
+			"poker.png": {
+				"url": "sheet/poker.png",
+				"type": "version",
+				"name": "sheet/poker.png"
+			}
+		},
+		"sound": {
+			"bgm.mp3": {
+				"url": "sound/bgm.mp3",
+				"type": "version",
+				"name": "sound/bgm.mp3"
+			},
+			"effect": {
+				"11.mp3": {
+					"url": "sound/effect/11.mp3",
+					"type": "version",
+					"name": "sound/effect/11.mp3"
+				},
+				"13.mp3": {
+					"url": "sound/effect/13.mp3",
+					"type": "version",
+					"name": "sound/effect/13.mp3"
+				},
+				"14.mp3": {
+					"url": "sound/effect/14.mp3",
+					"type": "version",
+					"name": "sound/effect/14.mp3"
+				},
+				"button.mp3": {
+					"url": "sound/effect/button.mp3",
+					"type": "version",
+					"name": "sound/effect/button.mp3"
+				},
+				"do.mp3": {
+					"url": "sound/effect/do.mp3",
+					"type": "version",
+					"name": "sound/effect/do.mp3"
+				},
+				"hand.mp3": {
+					"url": "sound/effect/hand.mp3",
+					"type": "version",
+					"name": "sound/effect/hand.mp3"
+				},
+				"hole.mp3": {
+					"url": "sound/effect/hole.mp3",
+					"type": "version",
+					"name": "sound/effect/hole.mp3"
+				},
+				"lose.mp3": {
+					"url": "sound/effect/lose.mp3",
+					"type": "version",
+					"name": "sound/effect/lose.mp3"
+				},
+				"ming.mp3": {
+					"url": "sound/effect/ming.mp3",
+					"type": "version",
+					"name": "sound/effect/ming.mp3"
+				},
+				"over.mp3": {
+					"url": "sound/effect/over.mp3",
+					"type": "version",
+					"name": "sound/effect/over.mp3"
+				},
+				"poker.mp3": {
+					"url": "sound/effect/poker.mp3",
+					"type": "version",
+					"name": "sound/effect/poker.mp3"
+				},
+				"result.mp3": {
+					"url": "sound/effect/result.mp3",
+					"type": "version",
+					"name": "sound/effect/result.mp3"
+				},
+				"spring.mp3": {
+					"url": "sound/effect/spring.mp3",
+					"type": "version",
+					"name": "sound/effect/spring.mp3"
+				},
+				"start.mp3": {
+					"url": "sound/effect/start.mp3",
+					"type": "version",
+					"name": "sound/effect/start.mp3"
+				},
+				"time.mp3": {
+					"url": "sound/effect/time.mp3",
+					"type": "version",
+					"name": "sound/effect/time.mp3"
+				},
+				"voice.mp3": {
+					"url": "sound/effect/voice.mp3",
+					"type": "version",
+					"name": "sound/effect/voice.mp3"
+				},
+				"win.mp3": {
+					"url": "sound/effect/win.mp3",
+					"type": "version",
+					"name": "sound/effect/win.mp3"
+				}
+			},
+			"do": {
+				"man": {
+					"10.mp3": {
+						"url": "sound/do/man/10.mp3",
+						"type": "version",
+						"name": "sound/do/man/10.mp3"
+					},
+					"11.mp3": {
+						"url": "sound/do/man/11.mp3",
+						"type": "version",
+						"name": "sound/do/man/11.mp3"
+					},
+					"13.mp3": {
+						"url": "sound/do/man/13.mp3",
+						"type": "version",
+						"name": "sound/do/man/13.mp3"
+					},
+					"14.mp3": {
+						"url": "sound/do/man/14.mp3",
+						"type": "version",
+						"name": "sound/do/man/14.mp3"
+					},
+					"2.mp3": {
+						"url": "sound/do/man/2.mp3",
+						"type": "version",
+						"name": "sound/do/man/2.mp3"
+					},
+					"4.mp3": {
+						"url": "sound/do/man/4.mp3",
+						"type": "version",
+						"name": "sound/do/man/4.mp3"
+					},
+					"5.mp3": {
+						"url": "sound/do/man/5.mp3",
+						"type": "version",
+						"name": "sound/do/man/5.mp3"
+					},
+					"7.mp3": {
+						"url": "sound/do/man/7.mp3",
+						"type": "version",
+						"name": "sound/do/man/7.mp3"
+					},
+					"8.mp3": {
+						"url": "sound/do/man/8.mp3",
+						"type": "version",
+						"name": "sound/do/man/8.mp3"
+					},
+					"9.mp3": {
+						"url": "sound/do/man/9.mp3",
+						"type": "version",
+						"name": "sound/do/man/9.mp3"
+					},
+					"bigger0.mp3": {
+						"url": "sound/do/man/bigger0.mp3",
+						"type": "version",
+						"name": "sound/do/man/bigger0.mp3"
+					},
+					"bigger1.mp3": {
+						"url": "sound/do/man/bigger1.mp3",
+						"type": "version",
+						"name": "sound/do/man/bigger1.mp3"
+					},
+					"bigger2.mp3": {
+						"url": "sound/do/man/bigger2.mp3",
+						"type": "version",
+						"name": "sound/do/man/bigger2.mp3"
+					},
+					"bj.mp3": {
+						"url": "sound/do/man/bj.mp3",
+						"type": "version",
+						"name": "sound/do/man/bj.mp3"
+					},
+					"bjb.mp3": {
+						"url": "sound/do/man/bjb.mp3",
+						"type": "version",
+						"name": "sound/do/man/bjb.mp3"
+					},
+					"bq.mp3": {
+						"url": "sound/do/man/bq.mp3",
+						"type": "version",
+						"name": "sound/do/man/bq.mp3"
+					},
+					"call.mp3": {
+						"url": "sound/do/man/call.mp3",
+						"type": "version",
+						"name": "sound/do/man/call.mp3"
+					},
+					"d1.mp3": {
+						"url": "sound/do/man/d1.mp3",
+						"type": "version",
+						"name": "sound/do/man/d1.mp3"
+					},
+					"d10.mp3": {
+						"url": "sound/do/man/d10.mp3",
+						"type": "version",
+						"name": "sound/do/man/d10.mp3"
+					},
+					"d11.mp3": {
+						"url": "sound/do/man/d11.mp3",
+						"type": "version",
+						"name": "sound/do/man/d11.mp3"
+					},
+					"d12.mp3": {
+						"url": "sound/do/man/d12.mp3",
+						"type": "version",
+						"name": "sound/do/man/d12.mp3"
+					},
+					"d13.mp3": {
+						"url": "sound/do/man/d13.mp3",
+						"type": "version",
+						"name": "sound/do/man/d13.mp3"
+					},
+					"d2.mp3": {
+						"url": "sound/do/man/d2.mp3",
+						"type": "version",
+						"name": "sound/do/man/d2.mp3"
+					},
+					"d3.mp3": {
+						"url": "sound/do/man/d3.mp3",
+						"type": "version",
+						"name": "sound/do/man/d3.mp3"
+					},
+					"d4.mp3": {
+						"url": "sound/do/man/d4.mp3",
+						"type": "version",
+						"name": "sound/do/man/d4.mp3"
+					},
+					"d5.mp3": {
+						"url": "sound/do/man/d5.mp3",
+						"type": "version",
+						"name": "sound/do/man/d5.mp3"
+					},
+					"d6.mp3": {
+						"url": "sound/do/man/d6.mp3",
+						"type": "version",
+						"name": "sound/do/man/d6.mp3"
+					},
+					"d7.mp3": {
+						"url": "sound/do/man/d7.mp3",
+						"type": "version",
+						"name": "sound/do/man/d7.mp3"
+					},
+					"d8.mp3": {
+						"url": "sound/do/man/d8.mp3",
+						"type": "version",
+						"name": "sound/do/man/d8.mp3"
+					},
+					"d9.mp3": {
+						"url": "sound/do/man/d9.mp3",
+						"type": "version",
+						"name": "sound/do/man/d9.mp3"
+					},
+					"double.mp3": {
+						"url": "sound/do/man/double.mp3",
+						"type": "version",
+						"name": "sound/do/man/double.mp3"
+					},
+					"l1.mp3": {
+						"url": "sound/do/man/l1.mp3",
+						"type": "version",
+						"name": "sound/do/man/l1.mp3"
+					},
+					"l2.mp3": {
+						"url": "sound/do/man/l2.mp3",
+						"type": "version",
+						"name": "sound/do/man/l2.mp3"
+					},
+					"pass0.mp3": {
+						"url": "sound/do/man/pass0.mp3",
+						"type": "version",
+						"name": "sound/do/man/pass0.mp3"
+					},
+					"pass1.mp3": {
+						"url": "sound/do/man/pass1.mp3",
+						"type": "version",
+						"name": "sound/do/man/pass1.mp3"
+					},
+					"pass2.mp3": {
+						"url": "sound/do/man/pass2.mp3",
+						"type": "version",
+						"name": "sound/do/man/pass2.mp3"
+					},
+					"recall.mp3": {
+						"url": "sound/do/man/recall.mp3",
+						"type": "version",
+						"name": "sound/do/man/recall.mp3"
+					},
+					"s1.mp3": {
+						"url": "sound/do/man/s1.mp3",
+						"type": "version",
+						"name": "sound/do/man/s1.mp3"
+					},
+					"s10.mp3": {
+						"url": "sound/do/man/s10.mp3",
+						"type": "version",
+						"name": "sound/do/man/s10.mp3"
+					},
+					"s11.mp3": {
+						"url": "sound/do/man/s11.mp3",
+						"type": "version",
+						"name": "sound/do/man/s11.mp3"
+					},
+					"s12.mp3": {
+						"url": "sound/do/man/s12.mp3",
+						"type": "version",
+						"name": "sound/do/man/s12.mp3"
+					},
+					"s13.mp3": {
+						"url": "sound/do/man/s13.mp3",
+						"type": "version",
+						"name": "sound/do/man/s13.mp3"
+					},
+					"s2.mp3": {
+						"url": "sound/do/man/s2.mp3",
+						"type": "version",
+						"name": "sound/do/man/s2.mp3"
+					},
+					"s3.mp3": {
+						"url": "sound/do/man/s3.mp3",
+						"type": "version",
+						"name": "sound/do/man/s3.mp3"
+					},
+					"s4.mp3": {
+						"url": "sound/do/man/s4.mp3",
+						"type": "version",
+						"name": "sound/do/man/s4.mp3"
+					},
+					"s5.mp3": {
+						"url": "sound/do/man/s5.mp3",
+						"type": "version",
+						"name": "sound/do/man/s5.mp3"
+					},
+					"s6.mp3": {
+						"url": "sound/do/man/s6.mp3",
+						"type": "version",
+						"name": "sound/do/man/s6.mp3"
+					},
+					"s60.mp3": {
+						"url": "sound/do/man/s60.mp3",
+						"type": "version",
+						"name": "sound/do/man/s60.mp3"
+					},
+					"s61.mp3": {
+						"url": "sound/do/man/s61.mp3",
+						"type": "version",
+						"name": "sound/do/man/s61.mp3"
+					},
+					"s7.mp3": {
+						"url": "sound/do/man/s7.mp3",
+						"type": "version",
+						"name": "sound/do/man/s7.mp3"
+					},
+					"s8.mp3": {
+						"url": "sound/do/man/s8.mp3",
+						"type": "version",
+						"name": "sound/do/man/s8.mp3"
+					},
+					"s9.mp3": {
+						"url": "sound/do/man/s9.mp3",
+						"type": "version",
+						"name": "sound/do/man/s9.mp3"
+					},
+					"spring.mp3": {
+						"url": "sound/do/man/spring.mp3",
+						"type": "version",
+						"name": "sound/do/man/spring.mp3"
+					}
+				},
+				"woman": {
+					"10.mp3": {
+						"url": "sound/do/woman/10.mp3",
+						"type": "version",
+						"name": "sound/do/woman/10.mp3"
+					},
+					"11.mp3": {
+						"url": "sound/do/woman/11.mp3",
+						"type": "version",
+						"name": "sound/do/woman/11.mp3"
+					},
+					"13.mp3": {
+						"url": "sound/do/woman/13.mp3",
+						"type": "version",
+						"name": "sound/do/woman/13.mp3"
+					},
+					"14.mp3": {
+						"url": "sound/do/woman/14.mp3",
+						"type": "version",
+						"name": "sound/do/woman/14.mp3"
+					},
+					"2.mp3": {
+						"url": "sound/do/woman/2.mp3",
+						"type": "version",
+						"name": "sound/do/woman/2.mp3"
+					},
+					"4.mp3": {
+						"url": "sound/do/woman/4.mp3",
+						"type": "version",
+						"name": "sound/do/woman/4.mp3"
+					},
+					"5.mp3": {
+						"url": "sound/do/woman/5.mp3",
+						"type": "version",
+						"name": "sound/do/woman/5.mp3"
+					},
+					"7.mp3": {
+						"url": "sound/do/woman/7.mp3",
+						"type": "version",
+						"name": "sound/do/woman/7.mp3"
+					},
+					"8.mp3": {
+						"url": "sound/do/woman/8.mp3",
+						"type": "version",
+						"name": "sound/do/woman/8.mp3"
+					},
+					"9.mp3": {
+						"url": "sound/do/woman/9.mp3",
+						"type": "version",
+						"name": "sound/do/woman/9.mp3"
+					},
+					"bigger0.mp3": {
+						"url": "sound/do/woman/bigger0.mp3",
+						"type": "version",
+						"name": "sound/do/woman/bigger0.mp3"
+					},
+					"bigger1.mp3": {
+						"url": "sound/do/woman/bigger1.mp3",
+						"type": "version",
+						"name": "sound/do/woman/bigger1.mp3"
+					},
+					"bigger2.mp3": {
+						"url": "sound/do/woman/bigger2.mp3",
+						"type": "version",
+						"name": "sound/do/woman/bigger2.mp3"
+					},
+					"bj.mp3": {
+						"url": "sound/do/woman/bj.mp3",
+						"type": "version",
+						"name": "sound/do/woman/bj.mp3"
+					},
+					"bjb.mp3": {
+						"url": "sound/do/woman/bjb.mp3",
+						"type": "version",
+						"name": "sound/do/woman/bjb.mp3"
+					},
+					"bq.mp3": {
+						"url": "sound/do/woman/bq.mp3",
+						"type": "version",
+						"name": "sound/do/woman/bq.mp3"
+					},
+					"call.mp3": {
+						"url": "sound/do/woman/call.mp3",
+						"type": "version",
+						"name": "sound/do/woman/call.mp3"
+					},
+					"d1.mp3": {
+						"url": "sound/do/woman/d1.mp3",
+						"type": "version",
+						"name": "sound/do/woman/d1.mp3"
+					},
+					"d10.mp3": {
+						"url": "sound/do/woman/d10.mp3",
+						"type": "version",
+						"name": "sound/do/woman/d10.mp3"
+					},
+					"d11.mp3": {
+						"url": "sound/do/woman/d11.mp3",
+						"type": "version",
+						"name": "sound/do/woman/d11.mp3"
+					},
+					"d12.mp3": {
+						"url": "sound/do/woman/d12.mp3",
+						"type": "version",
+						"name": "sound/do/woman/d12.mp3"
+					},
+					"d13.mp3": {
+						"url": "sound/do/woman/d13.mp3",
+						"type": "version",
+						"name": "sound/do/woman/d13.mp3"
+					},
+					"d2.mp3": {
+						"url": "sound/do/woman/d2.mp3",
+						"type": "version",
+						"name": "sound/do/woman/d2.mp3"
+					},
+					"d3.mp3": {
+						"url": "sound/do/woman/d3.mp3",
+						"type": "version",
+						"name": "sound/do/woman/d3.mp3"
+					},
+					"d4.mp3": {
+						"url": "sound/do/woman/d4.mp3",
+						"type": "version",
+						"name": "sound/do/woman/d4.mp3"
+					},
+					"d5.mp3": {
+						"url": "sound/do/woman/d5.mp3",
+						"type": "version",
+						"name": "sound/do/woman/d5.mp3"
+					},
+					"d6.mp3": {
+						"url": "sound/do/woman/d6.mp3",
+						"type": "version",
+						"name": "sound/do/woman/d6.mp3"
+					},
+					"d7.mp3": {
+						"url": "sound/do/woman/d7.mp3",
+						"type": "version",
+						"name": "sound/do/woman/d7.mp3"
+					},
+					"d8.mp3": {
+						"url": "sound/do/woman/d8.mp3",
+						"type": "version",
+						"name": "sound/do/woman/d8.mp3"
+					},
+					"d9.mp3": {
+						"url": "sound/do/woman/d9.mp3",
+						"type": "version",
+						"name": "sound/do/woman/d9.mp3"
+					},
+					"double.mp3": {
+						"url": "sound/do/woman/double.mp3",
+						"type": "version",
+						"name": "sound/do/woman/double.mp3"
+					},
+					"l1.mp3": {
+						"url": "sound/do/woman/l1.mp3",
+						"type": "version",
+						"name": "sound/do/woman/l1.mp3"
+					},
+					"l2.mp3": {
+						"url": "sound/do/woman/l2.mp3",
+						"type": "version",
+						"name": "sound/do/woman/l2.mp3"
+					},
+					"pass0.mp3": {
+						"url": "sound/do/woman/pass0.mp3",
+						"type": "version",
+						"name": "sound/do/woman/pass0.mp3"
+					},
+					"pass1.mp3": {
+						"url": "sound/do/woman/pass1.mp3",
+						"type": "version",
+						"name": "sound/do/woman/pass1.mp3"
+					},
+					"pass2.mp3": {
+						"url": "sound/do/woman/pass2.mp3",
+						"type": "version",
+						"name": "sound/do/woman/pass2.mp3"
+					},
+					"recall.mp3": {
+						"url": "sound/do/woman/recall.mp3",
+						"type": "version",
+						"name": "sound/do/woman/recall.mp3"
+					},
+					"s1.mp3": {
+						"url": "sound/do/woman/s1.mp3",
+						"type": "version",
+						"name": "sound/do/woman/s1.mp3"
+					},
+					"s10.mp3": {
+						"url": "sound/do/woman/s10.mp3",
+						"type": "version",
+						"name": "sound/do/woman/s10.mp3"
+					},
+					"s11.mp3": {
+						"url": "sound/do/woman/s11.mp3",
+						"type": "version",
+						"name": "sound/do/woman/s11.mp3"
+					},
+					"s12.mp3": {
+						"url": "sound/do/woman/s12.mp3",
+						"type": "version",
+						"name": "sound/do/woman/s12.mp3"
+					},
+					"s13.mp3": {
+						"url": "sound/do/woman/s13.mp3",
+						"type": "version",
+						"name": "sound/do/woman/s13.mp3"
+					},
+					"s2.mp3": {
+						"url": "sound/do/woman/s2.mp3",
+						"type": "version",
+						"name": "sound/do/woman/s2.mp3"
+					},
+					"s3.mp3": {
+						"url": "sound/do/woman/s3.mp3",
+						"type": "version",
+						"name": "sound/do/woman/s3.mp3"
+					},
+					"s4.mp3": {
+						"url": "sound/do/woman/s4.mp3",
+						"type": "version",
+						"name": "sound/do/woman/s4.mp3"
+					},
+					"s5.mp3": {
+						"url": "sound/do/woman/s5.mp3",
+						"type": "version",
+						"name": "sound/do/woman/s5.mp3"
+					},
+					"s6.mp3": {
+						"url": "sound/do/woman/s6.mp3",
+						"type": "version",
+						"name": "sound/do/woman/s6.mp3"
+					},
+					"s60.mp3": {
+						"url": "sound/do/woman/s60.mp3",
+						"type": "version",
+						"name": "sound/do/woman/s60.mp3"
+					},
+					"s61.mp3": {
+						"url": "sound/do/woman/s61.mp3",
+						"type": "version",
+						"name": "sound/do/woman/s61.mp3"
+					},
+					"s7.mp3": {
+						"url": "sound/do/woman/s7.mp3",
+						"type": "version",
+						"name": "sound/do/woman/s7.mp3"
+					},
+					"s8.mp3": {
+						"url": "sound/do/woman/s8.mp3",
+						"type": "version",
+						"name": "sound/do/woman/s8.mp3"
+					},
+					"s9.mp3": {
+						"url": "sound/do/woman/s9.mp3",
+						"type": "version",
+						"name": "sound/do/woman/s9.mp3"
+					},
+					"spring.mp3": {
+						"url": "sound/do/woman/spring.mp3",
+						"type": "version",
+						"name": "sound/do/woman/spring.mp3"
+					}
+				}
+			},
+			"chat": {
+				"man": {
+					"0.mp3": {
+						"url": "sound/chat/man/0.mp3",
+						"type": "version",
+						"name": "sound/chat/man/0.mp3"
+					},
+					"1.mp3": {
+						"url": "sound/chat/man/1.mp3",
+						"type": "version",
+						"name": "sound/chat/man/1.mp3"
+					},
+					"2.mp3": {
+						"url": "sound/chat/man/2.mp3",
+						"type": "version",
+						"name": "sound/chat/man/2.mp3"
+					},
+					"3.mp3": {
+						"url": "sound/chat/man/3.mp3",
+						"type": "version",
+						"name": "sound/chat/man/3.mp3"
+					},
+					"4.mp3": {
+						"url": "sound/chat/man/4.mp3",
+						"type": "version",
+						"name": "sound/chat/man/4.mp3"
+					},
+					"5.mp3": {
+						"url": "sound/chat/man/5.mp3",
+						"type": "version",
+						"name": "sound/chat/man/5.mp3"
+					}
+				},
+				"woman": {
+					"0.mp3": {
+						"url": "sound/chat/woman/0.mp3",
+						"type": "version",
+						"name": "sound/chat/woman/0.mp3"
+					},
+					"1.mp3": {
+						"url": "sound/chat/woman/1.mp3",
+						"type": "version",
+						"name": "sound/chat/woman/1.mp3"
+					},
+					"2.mp3": {
+						"url": "sound/chat/woman/2.mp3",
+						"type": "version",
+						"name": "sound/chat/woman/2.mp3"
+					},
+					"3.mp3": {
+						"url": "sound/chat/woman/3.mp3",
+						"type": "version",
+						"name": "sound/chat/woman/3.mp3"
+					},
+					"4.mp3": {
+						"url": "sound/chat/woman/4.mp3",
+						"type": "version",
+						"name": "sound/chat/woman/4.mp3"
+					},
+					"5.mp3": {
+						"url": "sound/chat/woman/5.mp3",
+						"type": "version",
+						"name": "sound/chat/woman/5.mp3"
+					}
+				}
+			}
+		}
+	}
+}

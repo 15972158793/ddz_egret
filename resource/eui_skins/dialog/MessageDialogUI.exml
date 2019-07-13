@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MessageDialogUISkin" states="normal,loading,alert,confirm" currentState="{state}"
+        xmlns:e="http://ns.egret.com/eui" xmlns:component="component.*">
+    <component:DialogUI id="dialog" title="{title}" contentWidth="619" contentHeight="151" contentHeight.loading="163"
+                        contentHeight.alert="206" contentHeight.confirm="206" canBack="{canBack}" canClose="{canClose}"
+                        onClose="{onClose}">
+        <component:elements>
+            <e:Array>
+                <e:Image source="set_bg" horizontalCenter="0" verticalCenter="0" width="619" height.loading="163"
+                         height.alert="206" height.confirm="206" />
+                <e:Group horizontalCenter="0" verticalCenter="0">
+                    <e:Group>
+                        <e:Group width="61" height="63" includeIn="loading">
+                            <e:Image id="loading" source="loading_mini" horizontalCenter="0" verticalCenter="0" />
+                        </e:Group>
+                        <e:Label text="{text}" fontFamily="黑体" size="32" textColor="0x412417" />
+                        <e:layout>
+                            <e:HorizontalLayout verticalAlign="middle" gap="25" />
+                        </e:layout>
+                    </e:Group>
+                    <e:Group includeIn="alert,confirm">
+                        <component:ButtonUI id="cancel" icon="txt_cancel" bg="btn_red" width="173" height="80"
+                                            includeIn="confirm" />
+                        <component:ButtonUI id="ok" icon="txt_ok" bg="btn_green" width="173" height="80" />
+                        <!--<component:ButtonUI id="cancel" icon="txt_cancel" bg="btn_red" width="173" height="80"
+                                                scale9Grid="25,24,174,34" includeIn="confirm" />
+                        <component:ButtonUI id="ok" icon="txt_ok" bg="btn_green" width="173" height="80"
+                                            scale9Grid="25,24,174,34" />
+                        -->
+                        <e:layout>
+                            <e:HorizontalLayout gap="125" />
+                        </e:layout>
+                    </e:Group>
+                    <e:layout>
+                        <e:VerticalLayout gap="18" horizontalAlign="center" />
+                    </e:layout>
+                </e:Group>
+            </e:Array>
+        </component:elements>
+    </component:DialogUI>
+</e:Skin>

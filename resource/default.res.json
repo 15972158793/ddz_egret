@@ -1,0 +1,66 @@
+{
+	"groups": [
+		{
+			"keys": "default_json,dialog_json,main_json,newImg_json,common_json",
+			"name": "preload"
+		},
+		{
+			"keys": "bg_menu,bg_menu_line",
+			"name": "unload"
+		}
+	],
+	"resources": [
+		{
+			"url": "sheet/expression.json",
+			"type": "sheet",
+			"name": "expression_json",
+			"subkeys": "e0,e1,e10,e11,e12,e13,e14,e15,e16,e17,e18,e19,e2,e20,e21,e22,e23,e24,e25,e26,e3,e4,e5,e6,e7,e8,e9"
+		},
+		{
+			"url": "sheet/poker.json",
+			"type": "sheet",
+			"name": "poker_json",
+			"subkeys": "0_60,0_61,1,1_11,1_12,1_13,2,2_11,2_12,2_13,3,3_11,3_12,3_13,4,4_11,4_12,4_13,h1,h10,h11,h12,h13,h2,h3,h4,h5,h6,h60,h7,h8,h9,poker,r1,r10,r11,r12,r13,r2,r3,r4,r5,r6,r61,r7,r8,r9"
+		},
+		{
+			"url": "sheet/default.json",
+			"type": "sheet",
+			"name": "default_json",
+			"subkeys": "border_png,button_down_png,button_up_png,checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,handle_png,header_png,off_png,on_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,selected_png,thumb_pb_png,thumb_png,track_pb_png,track_png,track_sb_png,tracklight_png"
+		},
+		{
+			"url": "alone/bg_menu.png",
+			"type": "image",
+			"name": "bg_menu"
+		},
+		{
+			"url": "alone/bg_menu_line.png",
+			"type": "image",
+			"name": "bg_menu_line"
+		},
+		{
+			"url": "sheet/dialog.json",
+			"type": "sheet",
+			"name": "dialog_json",
+			"subkeys": "bg_dissolution,bg_result,bg_result_king,bg_tab_curr,bg_voice,close,expand,king,king_mark,loading_mini,menu_back,menu_dissolution,menu_rule,menu_share,menu_top,menu_viewer,o,off,on,progress,progress_percent,txt_agree,txt_back,txt_continue,txt_flaunt,txt_reject,voice,voice_percent,x"
+		},
+		{
+			"url": "sheet/main.json",
+			"type": "sheet",
+			"name": "main_json",
+			"subkeys": "arrow,bg_chat,bg_hole,bg_none,bg_top,btn_chat,btn_menu,btn_setting,btn_share,btn_voice,count,count_percent,head_shine,host,host_mark,l0,l1,l2,l3,l4,l5,l6,l7,l8,l9,offline,offline_bg,poker_back,score,txt_bc,txt_bcz,txt_bj,txt_bjb,txt_bjbz,txt_bjz,txt_bq,txt_bqz,txt_call,txt_callz,txt_cp,txt_double,txt_doublez,txt_hint,txt_ready,txt_readyz,txt_recall,txt_recallz,txt_share,txt_stand,waiting"
+		},
+		{
+			"url": "sheet/newImg.json",
+			"type": "sheet",
+			"name": "newImg_json",
+			"subkeys": "chat_bar,chat_facebg,chat_title1,chat_title2,chat_titlebg,dis_bg,dis_title,help_bg,help_title,set_bg,set_effect,set_music,set_off,set_on,set_title,stmt_bg,stmt_line,stmt_title1,stmt_title2"
+		},
+		{
+			"url": "sheet/common.json",
+			"type": "sheet",
+			"name": "common_json",
+			"subkeys": "btn_circle,btn_circle_coffee,btn_circle_orange,btn_coffee,btn_green,btn_red,fill,head,head_bg,stall,txt_cancel,txt_ok"
+		}
+	]
+}

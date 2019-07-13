@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="component.PokerItemUISkin" states="up,down" xmlns:e="http://ns.egret.com/eui">
+    <e:Group y.down="-20" touchEnabled="false" touchChildren="false">
+        <e:Group top="-5" bottom="-6" left="-5" right="-4">
+            <e:Image source="poker" />
+            <e:Image source="{type}" right="13" bottom="13" />
+            <e:Group x="9" y="9">
+                <e:Image source="{value}" />
+                <e:Image source="{type_m}" scaleX=".45" scaleY=".45" />
+                <e:layout>
+                    <e:VerticalLayout horizontalAlign="center" gap="0" />
+                </e:layout>
+            </e:Group>
+            <e:Image source="host_mark" right="4" y="3" visible="{mark}" />
+        </e:Group>
+    </e:Group>
+</e:Skin>
